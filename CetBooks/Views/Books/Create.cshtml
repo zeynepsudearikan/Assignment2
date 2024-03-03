@@ -1,0 +1,25 @@
+﻿@model CetBooks.Models.Book
+
+<h1>Yeni Bir Kitap Ekle</h1>
+
+<form asp-action="Create" method="post">
+    <label>Kitap Adı:</label><br />
+    <input asp-for="Title" /><br />
+
+    <label>Description:</label><br />
+    <input asp-for="Description" /><br />
+
+    <label>Yazar:</label><br />
+    <input asp-for="Author" /><br />
+
+    <label>Publish Date:</label><br />
+    <input asp-for="PublishDate" type="date" /><br />
+
+    <label>Page Size:</label><br />
+    <input asp-for="PageSize" /><br />
+
+    <label>Price:</label><br />
+    <input asp-for="Price" /><br />
+
+    <button type="submit">Ekle</button>
+</form>
